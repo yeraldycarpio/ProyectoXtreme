@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\MINEDUCYT\\Desktop\\ProyectoConstructoraExtreme\\ConstructoraExtreme\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{60FC7D52-7972-4957-9553-8824BFE6572A}|ConstructoraExtreme\\ConstructoraExtreme.csproj|c:\\users\\mineducyt\\desktop\\proyectoconstructoraextreme\\constructoraextreme\\constructoraextreme\\models\\dal\\xtremecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60FC7D52-7972-4957-9553-8824BFE6572A}|ConstructoraExtreme\\ConstructoraExtreme.csproj|solutionrelative:constructoraextreme\\models\\dal\\xtremecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60FC7D52-7972-4957-9553-8824BFE6572A}|ConstructoraExtreme\\ConstructoraExtreme.csproj|c:\\users\\mineducyt\\desktop\\proyectoconstructoraextreme\\constructoraextreme\\constructoraextreme\\models\\en\\paymenthistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60FC7D52-7972-4957-9553-8824BFE6572A}|ConstructoraExtreme\\ConstructoraExtreme.csproj|solutionrelative:constructoraextreme\\models\\en\\paymenthistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{60FC7D52-7972-4957-9553-8824BFE6572A}|ConstructoraExtreme\\ConstructoraExtreme.csproj|c:\\users\\mineducyt\\desktop\\proyectoconstructoraextreme\\constructoraextreme\\constructoraextreme\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{60FC7D52-7972-4957-9553-8824BFE6572A}|ConstructoraExtreme\\ConstructoraExtreme.csproj|solutionrelative:constructoraextreme\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -21,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{60FC7D52-7972-4957-9553-8824BFE6572A}|ConstructoraExtreme\\ConstructoraExtreme.csproj|c:\\users\\mineducyt\\desktop\\proyectoconstructoraextreme\\constructoraextreme\\constructoraextreme\\models\\en\\maintenancetypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{60FC7D52-7972-4957-9553-8824BFE6572A}|ConstructoraExtreme\\ConstructoraExtreme.csproj|solutionrelative:constructoraextreme\\models\\en\\maintenancetypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{60FC7D52-7972-4957-9553-8824BFE6572A}|ConstructoraExtreme\\ConstructoraExtreme.csproj|c:\\users\\mineducyt\\desktop\\proyectoconstructoraextreme\\constructoraextreme\\constructoraextreme\\models\\en\\paymenthistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60FC7D52-7972-4957-9553-8824BFE6572A}|ConstructoraExtreme\\ConstructoraExtreme.csproj|solutionrelative:constructoraextreme\\models\\en\\paymenthistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{60FC7D52-7972-4957-9553-8824BFE6572A}|ConstructoraExtreme\\ConstructoraExtreme.csproj|c:\\users\\mineducyt\\desktop\\proyectoconstructoraextreme\\constructoraextreme\\constructoraextreme\\models\\en\\rentalpayments .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -85,10 +89,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{60FC7D52-7972-4957-9553-8824BFE6572A}|ConstructoraExtreme\\ConstructoraExtreme.csproj|c:\\users\\mineducyt\\desktop\\proyectoconstructoraextreme\\constructoraextreme\\constructoraextreme\\models\\en\\departmentscatalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{60FC7D52-7972-4957-9553-8824BFE6572A}|ConstructoraExtreme\\ConstructoraExtreme.csproj|solutionrelative:constructoraextreme\\models\\en\\departmentscatalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{60FC7D52-7972-4957-9553-8824BFE6572A}|ConstructoraExtreme\\ConstructoraExtreme.csproj|c:\\users\\mineducyt\\desktop\\proyectoconstructoraextreme\\constructoraextreme\\constructoraextreme\\constructoraextreme.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{60FC7D52-7972-4957-9553-8824BFE6572A}|ConstructoraExtreme\\ConstructoraExtreme.csproj|solutionrelative:constructoraextreme\\constructoraextreme.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -98,7 +98,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -106,7 +106,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "XtremeContext.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\ProyectoConstructoraExtreme\\ConstructoraExtreme\\ConstructoraExtreme\\Models\\DAL\\XtremeContext.cs",
+              "RelativeDocumentMoniker": "ConstructoraExtreme\\Models\\DAL\\XtremeContext.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\ProyectoConstructoraExtreme\\ConstructoraExtreme\\ConstructoraExtreme\\Models\\DAL\\XtremeContext.cs",
+              "RelativeToolTip": "ConstructoraExtreme\\Models\\DAL\\XtremeContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-27T00:12:26.941Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MaintenanceTasks.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\ProyectoConstructoraExtreme\\ConstructoraExtreme\\ConstructoraExtreme\\Models\\EN\\MaintenanceTasks.cs",
+              "RelativeDocumentMoniker": "ConstructoraExtreme\\Models\\EN\\MaintenanceTasks.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\ProyectoConstructoraExtreme\\ConstructoraExtreme\\ConstructoraExtreme\\Models\\EN\\MaintenanceTasks.cs",
+              "RelativeToolTip": "ConstructoraExtreme\\Models\\EN\\MaintenanceTasks.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T23:41:19.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MaintenanceRecords.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\ProyectoConstructoraExtreme\\ConstructoraExtreme\\ConstructoraExtreme\\Models\\EN\\MaintenanceRecords.cs",
+              "RelativeDocumentMoniker": "ConstructoraExtreme\\Models\\EN\\MaintenanceRecords.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\ProyectoConstructoraExtreme\\ConstructoraExtreme\\ConstructoraExtreme\\Models\\EN\\MaintenanceRecords.cs",
+              "RelativeToolTip": "ConstructoraExtreme\\Models\\EN\\MaintenanceRecords.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAA7wCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T23:32:22.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MaintenanceTypes.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\ProyectoConstructoraExtreme\\ConstructoraExtreme\\ConstructoraExtreme\\Models\\EN\\MaintenanceTypes.cs",
+              "RelativeDocumentMoniker": "ConstructoraExtreme\\Models\\EN\\MaintenanceTypes.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\ProyectoConstructoraExtreme\\ConstructoraExtreme\\ConstructoraExtreme\\Models\\EN\\MaintenanceTypes.cs",
+              "RelativeToolTip": "ConstructoraExtreme\\Models\\EN\\MaintenanceTypes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T23:28:08.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "MaintenanceParts.cs",
               "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\ProyectoConstructoraExtreme\\ConstructoraExtreme\\ConstructoraExtreme\\Models\\EN\\MaintenanceParts.cs",
               "RelativeDocumentMoniker": "ConstructoraExtreme\\Models\\EN\\MaintenanceParts.cs",
@@ -120,45 +172,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "MaintenanceTasks.cs",
-              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\ProyectoConstructoraExtreme\\ConstructoraExtreme\\ConstructoraExtreme\\Models\\EN\\MaintenanceTasks.cs",
-              "RelativeDocumentMoniker": "ConstructoraExtreme\\Models\\EN\\MaintenanceTasks.cs",
-              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\ProyectoConstructoraExtreme\\ConstructoraExtreme\\ConstructoraExtreme\\Models\\EN\\MaintenanceTasks.cs",
-              "RelativeToolTip": "ConstructoraExtreme\\Models\\EN\\MaintenanceTasks.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T23:41:19.822Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MaintenanceRecords.cs",
-              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\ProyectoConstructoraExtreme\\ConstructoraExtreme\\ConstructoraExtreme\\Models\\EN\\MaintenanceRecords.cs",
-              "RelativeDocumentMoniker": "ConstructoraExtreme\\Models\\EN\\MaintenanceRecords.cs",
-              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\ProyectoConstructoraExtreme\\ConstructoraExtreme\\ConstructoraExtreme\\Models\\EN\\MaintenanceRecords.cs",
-              "RelativeToolTip": "ConstructoraExtreme\\Models\\EN\\MaintenanceRecords.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAswCAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T23:32:22.086Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MaintenanceTypes.cs",
-              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\ProyectoConstructoraExtreme\\ConstructoraExtreme\\ConstructoraExtreme\\Models\\EN\\MaintenanceTypes.cs",
-              "RelativeDocumentMoniker": "ConstructoraExtreme\\Models\\EN\\MaintenanceTypes.cs",
-              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\ProyectoConstructoraExtreme\\ConstructoraExtreme\\ConstructoraExtreme\\Models\\EN\\MaintenanceTypes.cs",
-              "RelativeToolTip": "ConstructoraExtreme\\Models\\EN\\MaintenanceTypes.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T23:28:08.085Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\ProyectoConstructoraExtreme\\ConstructoraExtreme\\ConstructoraExtreme\\Program.cs",
               "RelativeDocumentMoniker": "ConstructoraExtreme\\Program.cs",
@@ -171,7 +184,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "PaymentHistory.cs",
               "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\ProyectoConstructoraExtreme\\ConstructoraExtreme\\ConstructoraExtreme\\Models\\EN\\PaymentHistory.cs",
               "RelativeDocumentMoniker": "ConstructoraExtreme\\Models\\EN\\PaymentHistory.cs",
@@ -184,33 +197,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "RentalPayments .cs",
               "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\ProyectoConstructoraExtreme\\ConstructoraExtreme\\ConstructoraExtreme\\Models\\EN\\RentalPayments .cs",
               "RelativeDocumentMoniker": "ConstructoraExtreme\\Models\\EN\\RentalPayments .cs",
               "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\ProyectoConstructoraExtreme\\ConstructoraExtreme\\ConstructoraExtreme\\Models\\EN\\RentalPayments .cs",
               "RelativeToolTip": "ConstructoraExtreme\\Models\\EN\\RentalPayments .cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAIwBEAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAwwBEAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-23T23:14:03.29Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "RentalDetails.cs",
               "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\ProyectoConstructoraExtreme\\ConstructoraExtreme\\ConstructoraExtreme\\Models\\EN\\RentalDetails.cs",
               "RelativeDocumentMoniker": "ConstructoraExtreme\\Models\\EN\\RentalDetails.cs",
               "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\ProyectoConstructoraExtreme\\ConstructoraExtreme\\ConstructoraExtreme\\Models\\EN\\RentalDetails.cs",
               "RelativeToolTip": "ConstructoraExtreme\\Models\\EN\\RentalDetails.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAcwBMAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA0wBMAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-23T21:34:28.621Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "MunicipalitiesCatalog.cs",
               "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\ProyectoConstructoraExtreme\\ConstructoraExtreme\\ConstructoraExtreme\\Models\\EN\\MunicipalitiesCatalog.cs",
               "RelativeDocumentMoniker": "ConstructoraExtreme\\Models\\EN\\MunicipalitiesCatalog.cs",
@@ -223,33 +236,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "PersonReferences.cs",
               "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\ProyectoConstructoraExtreme\\ConstructoraExtreme\\ConstructoraExtreme\\Models\\EN\\PersonReferences.cs",
               "RelativeDocumentMoniker": "ConstructoraExtreme\\Models\\EN\\PersonReferences.cs",
               "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\ProyectoConstructoraExtreme\\ConstructoraExtreme\\ConstructoraExtreme\\Models\\EN\\PersonReferences.cs",
               "RelativeToolTip": "ConstructoraExtreme\\Models\\EN\\PersonReferences.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAA9wBYAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA5wBYAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-23T21:19:11.808Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Persons.cs",
               "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\ProyectoConstructoraExtreme\\ConstructoraExtreme\\ConstructoraExtreme\\Models\\EN\\Persons.cs",
               "RelativeDocumentMoniker": "ConstructoraExtreme\\Models\\EN\\Persons.cs",
               "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\ProyectoConstructoraExtreme\\ConstructoraExtreme\\ConstructoraExtreme\\Models\\EN\\Persons.cs",
               "RelativeToolTip": "ConstructoraExtreme\\Models\\EN\\Persons.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAuwAkAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAA8wAkAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-23T20:45:03.857Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Prices .cs",
               "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\ProyectoConstructoraExtreme\\ConstructoraExtreme\\ConstructoraExtreme\\Models\\EN\\Prices .cs",
               "RelativeDocumentMoniker": "ConstructoraExtreme\\Models\\EN\\Prices .cs",
@@ -262,7 +275,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Products.cs",
               "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\ProyectoConstructoraExtreme\\ConstructoraExtreme\\ConstructoraExtreme\\Models\\EN\\Products.cs",
               "RelativeDocumentMoniker": "ConstructoraExtreme\\Models\\EN\\Products.cs",
@@ -275,33 +288,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Rentals.cs",
               "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\ProyectoConstructoraExtreme\\ConstructoraExtreme\\ConstructoraExtreme\\Models\\EN\\Rentals.cs",
               "RelativeDocumentMoniker": "ConstructoraExtreme\\Models\\EN\\Rentals.cs",
               "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\ProyectoConstructoraExtreme\\ConstructoraExtreme\\ConstructoraExtreme\\Models\\EN\\Rentals.cs",
               "RelativeToolTip": "ConstructoraExtreme\\Models\\EN\\Rentals.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAowBQAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA5wBQAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-23T21:29:26.619Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Store.cs",
               "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\ProyectoConstructoraExtreme\\ConstructoraExtreme\\ConstructoraExtreme\\Models\\EN\\Store.cs",
               "RelativeDocumentMoniker": "ConstructoraExtreme\\Models\\EN\\Store.cs",
               "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\ProyectoConstructoraExtreme\\ConstructoraExtreme\\ConstructoraExtreme\\Models\\EN\\Store.cs",
               "RelativeToolTip": "ConstructoraExtreme\\Models\\EN\\Store.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAIwBEAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAwwBEAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-23T19:30:01.127Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\ProyectoConstructoraExtreme\\ConstructoraExtreme\\ConstructoraExtreme\\Models\\EN\\User.cs",
               "RelativeDocumentMoniker": "ConstructoraExtreme\\Models\\EN\\User.cs",
@@ -314,7 +327,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Inventory.cs",
               "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\ProyectoConstructoraExtreme\\ConstructoraExtreme\\ConstructoraExtreme\\Models\\EN\\Inventory.cs",
               "RelativeDocumentMoniker": "ConstructoraExtreme\\Models\\EN\\Inventory.cs",
@@ -327,20 +340,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "Images.cs",
               "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\ProyectoConstructoraExtreme\\ConstructoraExtreme\\ConstructoraExtreme\\Models\\EN\\Images.cs",
               "RelativeDocumentMoniker": "ConstructoraExtreme\\Models\\EN\\Images.cs",
               "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\ProyectoConstructoraExtreme\\ConstructoraExtreme\\ConstructoraExtreme\\Models\\EN\\Images.cs",
               "RelativeToolTip": "ConstructoraExtreme\\Models\\EN\\Images.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAkAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-23T21:25:28.632Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "EconomicActivitiesCatalog.cs",
               "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\ProyectoConstructoraExtreme\\ConstructoraExtreme\\ConstructoraExtreme\\Models\\EN\\EconomicActivitiesCatalog.cs",
               "RelativeDocumentMoniker": "ConstructoraExtreme\\Models\\EN\\EconomicActivitiesCatalog.cs",
@@ -353,7 +366,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "DocumentTypesCatalog.cs",
               "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\ProyectoConstructoraExtreme\\ConstructoraExtreme\\ConstructoraExtreme\\Models\\EN\\DocumentTypesCatalog.cs",
               "RelativeDocumentMoniker": "ConstructoraExtreme\\Models\\EN\\DocumentTypesCatalog.cs",
@@ -366,7 +379,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "DepartmentsCatalog.cs",
               "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\ProyectoConstructoraExtreme\\ConstructoraExtreme\\ConstructoraExtreme\\Models\\EN\\DepartmentsCatalog.cs",
               "RelativeDocumentMoniker": "ConstructoraExtreme\\Models\\EN\\DepartmentsCatalog.cs",
@@ -375,19 +388,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-23T19:56:32.167Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "ConstructoraExtreme",
-              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\ProyectoConstructoraExtreme\\ConstructoraExtreme\\ConstructoraExtreme\\ConstructoraExtreme.csproj",
-              "RelativeDocumentMoniker": "ConstructoraExtreme\\ConstructoraExtreme.csproj",
-              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\ProyectoConstructoraExtreme\\ConstructoraExtreme\\ConstructoraExtreme\\ConstructoraExtreme.csproj",
-              "RelativeToolTip": "ConstructoraExtreme\\ConstructoraExtreme.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-12-23T21:02:21.753Z",
               "EditorCaption": ""
             }
           ]
