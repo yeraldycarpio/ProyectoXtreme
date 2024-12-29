@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ConstructoraExtreme.Models.EN
 {
-    public class Persons
+     public class Persons
     {
         public int Id { get; set; }
         public int Document_Type_Id { get; set; }

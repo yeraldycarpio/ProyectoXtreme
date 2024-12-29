@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Y/E6HO1dCBU=",
+  "dgSpecHash": "hlyWtLJ3fCA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\MINEDUCYT\\Desktop\\ProyectoConstructoraExtreme\\ConstructoraExtreme\\ConstructoraExtreme\\ConstructoraExtreme.csproj",
+  "projectFilePath": "C:\\Users\\MINEDUCYT\\Desktop\\ProyectoConstructoraExtreme\\ProyectoXtreme\\ConstructoraExtreme\\ConstructoraExtreme.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MINEDUCYT\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\MINEDUCYT\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ConstructoraExtreme")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+97400232f418dcf0fd16d4e706b12743e3a1a311")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+32700d95a8762d1a595cd63c1b8ba824bb57655c")]
 [assembly: System.Reflection.AssemblyProductAttribute("ConstructoraExtreme")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ConstructoraExtreme")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

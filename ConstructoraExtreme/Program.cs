@@ -1,4 +1,6 @@
+using ConstructoraExtreme.Models.DAL;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,7 +9,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-
+builder.Services.AddDbContext<XtremeContext>(options=> 
+options.UseSqlServer(builder.Configuration.GetConnectionString("cnn")));
 
 var app = builder.Build();
 
