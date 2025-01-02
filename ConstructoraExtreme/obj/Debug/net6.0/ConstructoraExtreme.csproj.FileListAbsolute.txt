@@ -1,7 +1,0 @@
-C:\Users\MINEDUCYT\Desktop\ProyectoConstructoraExtreme\ConstructoraExtreme\ConstructoraExtreme\obj\Debug\net6.0\ConstructoraExtreme.csproj.AssemblyReference.cache
-C:\Users\MINEDUCYT\Desktop\ProyectoConstructoraExtreme\ConstructoraExtreme\ConstructoraExtreme\obj\Debug\net6.0\ConstructoraExtreme.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\MINEDUCYT\Desktop\ProyectoConstructoraExtreme\ConstructoraExtreme\ConstructoraExtreme\obj\Debug\net6.0\ConstructoraExtreme.AssemblyInfoInputs.cache
-C:\Users\MINEDUCYT\Desktop\ProyectoConstructoraExtreme\ConstructoraExtreme\ConstructoraExtreme\obj\Debug\net6.0\ConstructoraExtreme.AssemblyInfo.cs
-C:\Users\MINEDUCYT\Desktop\ProyectoConstructoraExtreme\ConstructoraExtreme\ConstructoraExtreme\obj\Debug\net6.0\ConstructoraExtreme.csproj.CoreCompileInputs.cache
-C:\Users\MINEDUCYT\Desktop\ProyectoConstructoraExtreme\ConstructoraExtreme\ConstructoraExtreme\obj\Debug\net6.0\ConstructoraExtreme.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\MINEDUCYT\Desktop\ProyectoConstructoraExtreme\ConstructoraExtreme\ConstructoraExtreme\obj\Debug\net6.0\ConstructoraExtreme.MvcApplicationPartsAssemblyInfo.cache
