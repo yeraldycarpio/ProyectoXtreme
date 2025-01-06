@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35431.28
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConstructoraExtreme", "ConstructoraExtreme\ConstructoraExtreme.csproj", "{60FC7D52-7972-4957-9553-8824BFE6572A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConstructoraExtreme", "ConstructoraExtreme\ConstructoraExtreme.csproj", "{60FC7D52-7972-4957-9553-8824BFE6572A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extreme.DTOs", "Extreme.DTOs\Extreme.DTOs.csproj", "{8279E046-921B-45EB-B499-A93BA2D3F526}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{60FC7D52-7972-4957-9553-8824BFE6572A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60FC7D52-7972-4957-9553-8824BFE6572A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60FC7D52-7972-4957-9553-8824BFE6572A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8279E046-921B-45EB-B499-A93BA2D3F526}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8279E046-921B-45EB-B499-A93BA2D3F526}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8279E046-921B-45EB-B499-A93BA2D3F526}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8279E046-921B-45EB-B499-A93BA2D3F526}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
