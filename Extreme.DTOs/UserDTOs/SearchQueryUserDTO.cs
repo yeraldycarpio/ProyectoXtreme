@@ -25,7 +25,7 @@ namespace Extreme.DTOs.UserDTOs
         /// 1 = No se cuenta el total de resultados.
         /// 2 = Se cuenta el total de resultados.
         /// </summary>
-        public byte SendRowCount { get; set; } = 1;
+        public byte SendRowCount { get; set; } = 2;
     }
 }
 

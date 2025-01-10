@@ -1,4 +1,7 @@
-﻿namespace ConstructoraExtreme.Models.EN
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.Data;
+
+namespace ConstructoraExtreme.Models.EN
 {
     public class User
     {
@@ -6,5 +9,10 @@
         public string Name { set; get; }
         public string Email { set; get; }
         public string Password { set; get; }
+
+        [Column("role_id")]
+        public int? RoleId { get; set; }
+        public Role Role { get; set; }
+        public ICollection<Store> Stores { get; set; }
     }
 }

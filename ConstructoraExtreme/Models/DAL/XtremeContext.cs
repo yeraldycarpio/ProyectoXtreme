@@ -13,6 +13,7 @@ namespace ConstructoraExtreme.Models.DAL
         // Define un DbSet llamado "Customers" que representa una tabla de clientes en la base de datos.
         public DbSet<Store> Stores { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<Role> Roles { get; set; }
         public DbSet<DocumentTypesCatalog> DocumentTypesCatalogs { get; set; }
         public DbSet<DepartmentsCatalog> DepartmentsCatalogs { get; set; }
         public DbSet<MunicipalitiesCatalog> MunicipalitiesCatalogs { get; set; }
@@ -30,6 +31,8 @@ namespace ConstructoraExtreme.Models.DAL
         public DbSet<MaintenanceRecords> MaintenanceRecords { get; set; }
         public DbSet<MaintenanceTasks> MaintenanceTasks { get; set; }
         public DbSet<MaintenanceParts> MaintenanceParts { get; set; }
+
+      
     }
 
 }

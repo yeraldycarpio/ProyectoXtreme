@@ -250,3 +250,25 @@ supplier VARCHAR(100),
 created_at DATETIME DEFAULT GETDATE(),
 FOREIGN KEY (maintenance_record_id) REFERENCES maintenance_records(id)
 );		
+
+-----añadir de ultimoo
+-- Create roles table
+CREATE TABLE Roles (
+id INT PRIMARY KEY IDENTITY(1,1),
+name VARCHAR(50) NOT NULL UNIQUE,
+description TEXT
+);
+
+-- Add role_id to Users table
+ALTER TABLE Users
+ADD role_id INT;
+
+-- Add foreign key constraint
+ALTER TABLE Users
+ADD CONSTRAINT FK_Users_Roles 
+FOREIGN KEY (role_id) REFERENCES Roles(id);
+
+
+-- Agregar rol admin primero
+INSERT INTO Roles (name, description) 
+VALUES ('Admin', 'Administrador del sistema');

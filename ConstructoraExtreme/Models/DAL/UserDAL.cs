@@ -1,6 +1,11 @@
 ﻿using ConstructoraExtreme.Models.EN;
+using CRM.DTOs.UsersDTOs;
+using Extreme.DTOs.UserDTOs;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace ConstructoraExtreme.Models.DAL
 {
@@ -14,77 +19,131 @@ namespace ConstructoraExtreme.Models.DAL
             _context = XtremeContext;
         }
 
-        // Método para crear un nuevo usuario en la base de datos.
-        public async Task<int> Create(User user)
+        // Crear usuario con contraseña encriptada
+        public async Task CreateUserAsync(User user, string password)
         {
-            _context.Add(user);
-            return await _context.SaveChangesAsync();
+            user.Password = HashPassword(password);
+            await _context.Users.AddAsync(user);
+
+            await _context.SaveChangesAsync();
         }
 
-        // Método para obtener un usuario por su ID.
-        public async Task<User> GetById(int id)
+        // Listar usuarios con búsqueda y paginación
+        public async Task<SearchResultUserDTO> GetUsersAsync(SearchQueryUserDTO query)
         {
-            var user = await _context.Users.FirstOrDefaultAsync(u => u.Id == id);
-            return user ?? new User();
-        }
+            var usersQuery = _context.Users.Include(u => u.Role).AsQueryable();
 
-        // Método para editar un usuario existente en la base de datos.
-        public async Task<int> Edit(User user)
-        {
-            int result = 0;
-            var userUpdate = await GetById(user.Id);
-            if (userUpdate.Id != 0)
+            if (!string.IsNullOrEmpty(query.Name_Like))
             {
-                // Actualiza los datos del usuario.
-                userUpdate.Name = user.Name;
-                userUpdate.Email = user.Email;
-                userUpdate.Password = user.Password;
-
-                result = await _context.SaveChangesAsync();
+                usersQuery = usersQuery.Where(u => u.Name.Contains(query.Name_Like));
             }
-            return result;
-        }
-
-        // Método para eliminar un usuario de la base de datos por su ID.
-        public async Task<int> Delete(int id)
-        {
-            int result = 0;
-            var userDelete = await GetById(id);
-            if (userDelete.Id > 0)
+            if (!string.IsNullOrEmpty(query.Email_Like))
             {
-                // Elimina el usuario de la base de datos.
-                _context.Users.Remove(userDelete);
-                result = await _context.SaveChangesAsync();
+                usersQuery = usersQuery.Where(u => u.Email.Contains(query.Email_Like));
             }
-            return result;
+            query.Skip = Math.Max(0, query.Skip);
+            query.Take = Math.Max(1, query.Take); // Evitar `Take` con valor 0
+
+
+            var totalCount = query.SendRowCount == 2 ? await usersQuery.CountAsync() : 0;
+
+            var users = await usersQuery
+                .OrderBy(u => u.Id) // Add some default sorting
+                .Skip(query.Skip)
+                .Take(query.Take)
+                .Select(u => new SearchResultUserDTO.UserDTO
+                {
+                    Id = u.Id,
+                    Name = u.Name,
+                    Email = u.Email
+                })
+                .ToListAsync();
+
+            return new SearchResultUserDTO { CountRow = totalCount, Data = users };
         }
 
-        // Método privado para construir una consulta IQueryable para buscar usuarios con filtros.
-        private IQueryable<User> Query(User user)
+
+        // Obtener usuario por email
+        public async Task<User?> GetUserByEmailAsync(string email)
         {
-            var query = _context.Users.AsQueryable();
-            if (!string.IsNullOrWhiteSpace(user.Name))
-                query = query.Where(u => u.Name.Contains(user.Name));
-            if (!string.IsNullOrWhiteSpace(user.Email))
-                query = query.Where(u => u.Email.Contains(user.Email));
-
-            return query;
+            return await _context.Users
+                .Include(u => u.Role)  // This ensures the Role is loaded
+                .FirstOrDefaultAsync(u => u.Email == email);
         }
 
-        // Método para contar la cantidad de resultados de búsqueda con filtros.
-        public async Task<int> CountSearch(User user)
+        // Obtener usuario por ID
+        public async Task<GetIdResultUserDTO?> GetUserByIdAsync(int id)
         {
-            return await Query(user).CountAsync();
+            return await _context.Users
+                .Include(u => u.Role)
+                .Where(u => u.Id == id)
+                .Select(u => new GetIdResultUserDTO
+                {
+                    Id = u.Id,
+                    Name = u.Name,
+                    Email = u.Email,
+                    Password = u.Password,
+                    RoleId = (int)u.RoleId
+                })
+                .FirstOrDefaultAsync();
+        }
+        // Actualizar usuario
+        public async Task<bool> UpdateUserAsync(int id, EditUserDTO dto)
+        {
+            var user = await _context.Users.FindAsync(id);
+            if (user == null) return false;
+
+            user.Name = dto.Name;
+            user.Email = dto.Email;
+
+            //if (!string.IsNullOrEmpty(dto.Password))
+            //{
+            //    user.Password = HashPassword(dto.Password);
+            //}
+
+            await _context.SaveChangesAsync();
+            return true;
         }
 
-        // Método para buscar usuarios con filtros, paginación y ordenamiento.
-        public async Task<List<User>> Search(User user, int take = 10, int skip = 0)
+        // Eliminar usuario
+        public async Task<bool> DeleteUserAsync(int id)
         {
-            take = take == 0 ? 10 : take;
-            var query = Query(user);
-            query = query.OrderByDescending(u => u.Id).Skip(skip).Take(take);
-            return await query.ToListAsync();
+            var user = await _context.Users.FindAsync(id);
+            if (user == null) return false;
+
+            _context.Users.Remove(user);
+            await _context.SaveChangesAsync();
+            return true;
         }
+        // Método para encriptar contraseñas
+        private string HashPassword(string password)
+        {
+            using var sha256 = SHA256.Create();
+            var hashedBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
+            return BitConverter.ToString(hashedBytes).Replace("-", "").ToLower();
+            
+        }
+        public async Task<User?> ValidateCredentialsAsync(string email, string password)
+        {
+            var user = await GetUserByEmailAsync(email);
+
+            if (user != null && VerifyPassword(user.Password, password))
+            {
+                return user;
+            }
+
+            return null;
+        }
+        // Verificar la contraseña encriptada
+        private bool VerifyPassword(string? hashedPassword, string? plainPassword)
+        {
+            if (string.IsNullOrEmpty(hashedPassword) || string.IsNullOrEmpty(plainPassword))
+                return false;
+
+            return hashedPassword == HashPassword(plainPassword);
+        }
+
+
     }
 
 }

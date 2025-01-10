@@ -9,20 +9,26 @@ namespace Extreme.DTOs.UserDTOs
 {
     public class CreateUserDTO
     {
+       
         [Display(Name = "Nombre")]
         [Required(ErrorMessage = "El campo Nombre es obligatorio.")]
-        [MaxLength(50, ErrorMessage = "El campo Nombre no puede tener más de 50 caracteres.")]
+        [MaxLength(50, ErrorMessage = "El Nombre no debe contener más de 50 carácteres.")]
         public string Name { get; set; }
 
-        [Display(Name = "Correo")]
-        [Required(ErrorMessage = "El campo Correo es obligatorio.")]
-        [MaxLength(50, ErrorMessage = "El campo Correo no puede tener más de 50 caracteres.")]
+        [Display(Name = "Correo Electrónico")]
+        [Required(ErrorMessage = "El campo Correo Electrónico es obligatorio.")]
+        [MaxLength(100, ErrorMessage = "El Correo Electrónico no debe contener más de 100 carácteres.")]
+        [EmailAddress(ErrorMessage = "Escriba un Correo Electrónico válido.")]
         public string Email { get; set; }
 
         [Display(Name = "Contraseña")]
         [Required(ErrorMessage = "El campo Contraseña es obligatorio.")]
-        [MaxLength(50, ErrorMessage = "El campo Contraseña no puede tener más de 50 caracteres.")]
         public string Password { get; set; }
+
+        [Display(Name = "Rol")]
+        [Required(ErrorMessage = "Por favor, seleccione un  Rol.")]
+        [Range(1, int.MaxValue, ErrorMessage = "El Rol seleccionado no es válido.")]
+        public int RoleId { get; set; }
     }
 
 }
