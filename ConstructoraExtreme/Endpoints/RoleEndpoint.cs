@@ -20,7 +20,7 @@ namespace ConstructoraExtreme.Endpoints
                 });
 
                 return Results.Ok(rolesDTO);
-            }).RequireAuthorization("AdminPolicy");
+            }).RequireAuthorization();
 
             app.MapGet("/api/roles/{id:int}", async (int id, RoleDAL roleRepo) =>
             {
@@ -37,10 +37,10 @@ namespace ConstructoraExtreme.Endpoints
                 };
 
                 return Results.Ok(roleDTO);
-            }).RequireAuthorization("ViewerPolicy");
+            }).RequireAuthorization();
 
             // Endpoint para listar roles - accesible por Admin y otro
-            app.MapPost("/api/roles", async (CreateRoleDTO request, RoleDAL roleRepo) =>
+            app.MapPost("/api/roles/create", async (CreateRoleDTO request, RoleDAL roleRepo) =>
             {
                 var role = new Role
                 {
@@ -51,7 +51,7 @@ namespace ConstructoraExtreme.Endpoints
                 await roleRepo.CreateRoleAsync(role);
 
                 return Results.Created($"/api/roles/{role.Id}", new { message = "Rol creado exitosamente" });
-            }).RequireAuthorization("ViewerPolicy");
+            }).RequireAuthorization("AdminPolicy");
 
             app.MapPut("/api/roles/{id:int}", async (int id, EditRoleDTO request, RoleDAL roleRepo) =>
             {
