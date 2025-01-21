@@ -40,6 +40,7 @@ builder.Services.AddDbContext<XtremeContext>(options=>
 options.UseSqlServer(builder.Configuration.GetConnectionString("cnn")));
 builder.Services.AddScoped<UserDAL>();
 builder.Services.AddScoped<RoleDAL>();
+builder.Services.AddScoped<DepartmentsCatalogDAL>();
 
 // Configuración Autenticación
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
@@ -90,6 +91,7 @@ app.UseAuthentication();
 app.UseAuthorization();
 app.MapAuthEndpoints();
 app.MapRoleEndpoints();
+app.MapDepartmentEndpoint();
 app.MapControllers();
 
 app.Run();
