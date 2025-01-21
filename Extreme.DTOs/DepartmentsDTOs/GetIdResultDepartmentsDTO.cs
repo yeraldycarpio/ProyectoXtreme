@@ -9,13 +9,13 @@ namespace Extreme.DTOs.DepartmentsDTOs
 {
     public class GetIdResultDepartmentsDTO
     {
-    //    public int Id { get; set; }
+        public int Id { get; set; }
 
-    //    [Display(Name = "Codigo del departamento")]
-    //    public string Code { get; set; }
+        [Display(Name = "Codigo del departamento")]
+        public string Code { get; set; }
 
-    //    [Display(Name = "Nombre del departamento")]
-    //    public string Name { get; set; }
+        [Display(Name = "Nombre del departamento")]
+        public string Name { get; set; }
 
     }
 }
