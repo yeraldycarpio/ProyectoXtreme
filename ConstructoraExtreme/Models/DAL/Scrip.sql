@@ -34,7 +34,7 @@ created_at DATETIME DEFAULT GETDATE(),
 
 CREATE TABLE departments_catalog(
 id INT IDENTITY(1,1) PRIMARY KEY,
-code CHAR(2) UNIQUE NOT NULL,
+code varchar(2) UNIQUE NOT NULL,
 name VARCHAR(100) NOT NULL
 );
 

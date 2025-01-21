@@ -70,19 +70,32 @@ namespace ConstructoraExtreme.Models.DAL
             return query;
         }
 
-        // Método para contar la cantidad de resultados de búsqueda con filtros.
-        public async Task<int> CountSearch(DepartmentsCatalog department)
-        {
-            return await Query(department).CountAsync();
-        }
-
-        // Método para buscar departamentos con filtros, paginación y ordenamiento.
         public async Task<List<DepartmentsCatalog>> Search(DepartmentsCatalog department, int take = 10, int skip = 0)
         {
-            take = take == 0 ? 10 : take;
-            var query = Query(department);
-            query = query.OrderByDescending(d => d.Id).Skip(skip).Take(take);
-            return await query.ToListAsync();
+            try
+            {
+                take = take == 0 ? 10 : take;
+                var query = Query(department);
+                query = query.OrderByDescending(d => d.Id).Skip(skip).Take(take);
+                return await query.ToListAsync();
+            }
+            catch (Exception)
+            {
+                // Retornamos una lista vacía en caso de error
+                return new List<DepartmentsCatalog>();
+            }
+        }
+
+        public async Task<int> CountSearch(DepartmentsCatalog department)
+        {
+            try
+            {
+                return await Query(department).CountAsync();
+            }
+            catch (Exception)
+            {
+                return 0;
+            }
         }
     }
 
