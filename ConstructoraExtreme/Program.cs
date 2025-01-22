@@ -42,6 +42,7 @@ builder.Services.AddScoped<UserDAL>();
 builder.Services.AddScoped<RoleDAL>();
 builder.Services.AddScoped<DepartmentsCatalogDAL>();
 builder.Services.AddScoped<StoreDAL>();
+builder.Services.AddScoped<ProductsDAL>();
 
 // Configuración Autenticación
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
@@ -94,6 +95,7 @@ app.MapAuthEndpoints();
 app.MapRoleEndpoints();
 app.MapDepartmentEndpoint();
 app.MapStoreEndpoints();
+app.MapProductEndpoints();
 app.MapControllers();
 
 app.Run();
