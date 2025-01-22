@@ -80,8 +80,8 @@ namespace ConstructoraExtreme.Models.DAL
                     query = query.Where(s => s.NRC.Contains(store.NRC));
                 if (!string.IsNullOrWhiteSpace(store.Giro))
                     query = query.Where(s => s.Giro.Contains(store.Giro));
-                if (store.User_Id > 0)
-                    query = query.Where(s => s.User_Id == store.User_Id);
+                //if (store.User_Id > 0)
+                //    query = query.Where(s => s.User_Id == store.User_Id);
 
                 return query;
             }

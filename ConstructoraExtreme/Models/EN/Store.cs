@@ -12,9 +12,11 @@ namespace ConstructoraExtreme.Models.EN
         public string Nit { get; set; }
         public string NRC   { get; set; }
         public string Giro { get; set; }
+
+        [Column("user_id")]
         public int User_Id { get; set; }
 
-        [ForeignKey("UserId")]
+        [ForeignKey("User_Id")]
         public User User { get; set; }
     }
 }

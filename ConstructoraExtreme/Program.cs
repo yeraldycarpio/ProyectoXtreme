@@ -41,6 +41,7 @@ options.UseSqlServer(builder.Configuration.GetConnectionString("cnn")));
 builder.Services.AddScoped<UserDAL>();
 builder.Services.AddScoped<RoleDAL>();
 builder.Services.AddScoped<DepartmentsCatalogDAL>();
+builder.Services.AddScoped<StoreDAL>();
 
 // Configuración Autenticación
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
@@ -92,6 +93,7 @@ app.UseAuthorization();
 app.MapAuthEndpoints();
 app.MapRoleEndpoints();
 app.MapDepartmentEndpoint();
+app.MapStoreEndpoints();
 app.MapControllers();
 
 app.Run();
