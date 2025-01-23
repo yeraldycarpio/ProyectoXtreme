@@ -60,6 +60,7 @@ name VARCHAR(100) NOT NULL,
 description TEXT,
 brand VARCHAR(50),
 store_id INT NOT NULL,
+category_id INT NOT NULL,
 FOREIGN KEY (store_id) REFERENCES Stores(id),
 FOREIGN KEY (category_id) REFERENCES Category(id)
 );
