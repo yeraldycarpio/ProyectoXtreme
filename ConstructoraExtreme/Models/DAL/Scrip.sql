@@ -58,10 +58,10 @@ CREATE TABLE Products (
 id INT IDENTITY(1,1) PRIMARY KEY,
 name VARCHAR(100) NOT NULL,
 description TEXT,
-category VARCHAR(50),
 brand VARCHAR(50),
 store_id INT NOT NULL,
-FOREIGN KEY (store_id) REFERENCES Stores(id)
+FOREIGN KEY (store_id) REFERENCES Stores(id),
+FOREIGN KEY (category_id) REFERENCES Category(id)
 );
 
 CREATE TABLE Prices (
@@ -272,3 +272,18 @@ FOREIGN KEY (role_id) REFERENCES Roles(id);
 -- Agregar rol admin primero
 INSERT INTO Roles (name, description) 
 VALUES ('Admin', 'Administrador del sistema');
+
+--Create Table Category
+CREATE TABLE Category(
+Id INT PRIMARY KEY IDENTITY(1,1),
+name VARCHAR(50)NOT NULL,
+);
+
+--Agregar registro categorias
+INSERT INTO Category (name)
+VALUES ('Maquina');
+
+INSERT INTO Category(name)
+VALUES('Equipos de construccion');
+
+
