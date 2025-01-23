@@ -16,16 +16,16 @@ namespace Extreme.DTOs.ProductsDTOs
         [MaxLength(250, ErrorMessage = "The Description must not exceed 250 characters.")]
         public string Description { get; set; }
 
-        [Required(ErrorMessage = "The Category is required.")]
-        [MaxLength(50, ErrorMessage = "The Category must not exceed 50 characters.")]
-        public string Category { get; set; }
-
         [Required(ErrorMessage = "The Brand is required.")]
         [MaxLength(50, ErrorMessage = "The Brand must not exceed 50 characters.")]
         public string Brand { get; set; }
 
         [Required(ErrorMessage = "The Store_Id is required.")]
         public int Store_Id { get; set; }
+
+        [Required(ErrorMessage ="The CategoryId is required")]
+        public int Categoria_Id { get; set; } // Foreign Key
+        public string CategoriaNombre { get; set; } = string.Empty; // Para mostrar el nombre de la categoría (opcional)
     }
 
 }

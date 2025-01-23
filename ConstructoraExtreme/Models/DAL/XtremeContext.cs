@@ -31,6 +31,7 @@ namespace ConstructoraExtreme.Models.DAL
         public DbSet<MaintenanceRecords> MaintenanceRecords { get; set; }
         public DbSet<MaintenanceTasks> MaintenanceTasks { get; set; }
         public DbSet<MaintenanceParts> MaintenanceParts { get; set; }
+        public DbSet<Category> categories { get; set; }
 
       
     }

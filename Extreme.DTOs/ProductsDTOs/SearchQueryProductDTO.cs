@@ -13,16 +13,15 @@ namespace Extreme.DTOs.ProductsDTOs
         [Display(Name = "Product Name")]
         public string Name { get; set; }
 
-        [MaxLength(50, ErrorMessage = "The Category must not exceed 50 characters.")]
-        [Display(Name = "Category")]
-        public string Category { get; set; }
-
         [MaxLength(50, ErrorMessage = "The Brand must not exceed 50 characters.")]
         [Display(Name = "Brand")]
         public string Brand { get; set; }
 
         [Display(Name = "Store ID")]
         public int? Store_Id { get; set; } // Optional filter by store
+
+        [Display(Name = "Category_Id ")]
+        public int? Category_Id { get; set; } 
 
         public int PageNumber { get; set; } = 1; // Default page number
         public int PageSize { get; set; } = 10; // Default page size

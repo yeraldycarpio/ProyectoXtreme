@@ -23,9 +23,6 @@ namespace Extreme.DTOs.ProductsDTOs
             [Display(Name = "Product Description")]
             public string Description { get; set; }
 
-            [Display(Name = "Category")]
-            public string Category { get; set; }
-
             [Display(Name = "Brand")]
             public string Brand { get; set; }
 
@@ -34,6 +31,12 @@ namespace Extreme.DTOs.ProductsDTOs
 
             [Display(Name = "Store Name")]
             public string StoreName { get; set; }
+
+            [Display(Name = "Category_Id")]
+            public int Category_Id { get; set; }
+
+            [Display(Name = "Category Name")]
+            public string CategoryName { get; set; }
         }
     }
 
