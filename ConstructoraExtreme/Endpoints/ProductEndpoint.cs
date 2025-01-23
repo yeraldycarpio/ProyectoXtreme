@@ -20,10 +20,11 @@ namespace ConstructoraExtreme.Endpoints
                     Id = product.Id,
                     Name = product.Name,
                     Description = product.Description,
-                    Category = product.Category,
                     Brand = product.Brand,
                     Store_Id = product.Store_Id,
-                    StoreName = product.Store?.Name
+                    StoreName = product.Store?.Name,
+                    Category_Id = product.Category_Id,
+                    CategoryName=product.Category.Nombre,
                 };
 
                 return Results.Ok(result);
@@ -36,9 +37,9 @@ namespace ConstructoraExtreme.Endpoints
                 {
                     Name = request.Name,
                     Description = request.Description,
-                    Category = request.Category,
                     Brand = request.Brand,
-                    Store_Id = request.Store_Id
+                    Store_Id = request.Store_Id,
+                    Category_Id = request.Categoria_Id,
                 };
 
                 int result = await productRepo.Create(product);
@@ -54,10 +55,10 @@ namespace ConstructoraExtreme.Endpoints
                 {
                     Id = id,
                     Name = request.Name,
-                    Description = request.Description,
-                    Category = request.Category,
+                    Description = request.Description,                    
                     Brand = request.Brand,
-                    Store_Id = request.Store_Id
+                    Store_Id = request.Store_Id,
+                    Category_Id=request.Category_Id,
                 };
 
                 int result = await productRepo.Edit(product);
@@ -73,10 +74,10 @@ namespace ConstructoraExtreme.Endpoints
                 {
                     var product = new Products
                     {
-                        Name = searchDTO.Name,
-                        Category = searchDTO.Category,
+                        Name = searchDTO.Name,                        
                         Brand = searchDTO.Brand,
-                        Store_Id = searchDTO.Store_Id ?? 0
+                        Store_Id = searchDTO.Store_Id ?? 0,
+                        Category_Id =searchDTO.Category_Id ??0
                     };
 
                     var skip = (searchDTO.PageNumber - 1) * searchDTO.PageSize;
@@ -106,11 +107,12 @@ namespace ConstructoraExtreme.Endpoints
                     {
                         Id = p.Id,
                         Name = p.Name,
-                        Description = p.Description,
-                        Category = p.Category,
+                        Description = p.Description,                       
                         Brand = p.Brand,
                         Store_Id = p.Store_Id,
-                        StoreName = p.Store?.Name
+                        StoreName = p.Store?.Name,
+                        Category_Id=p.Category_Id,
+                        CategoryName =p.Category?.Nombre,
                     }).ToList();
 
                     return Results.Ok(searchResult);
