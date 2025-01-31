@@ -15,24 +15,16 @@ namespace Extreme.DTOs.RentalPaymentsDTOs
 
         public class RentalPaymentsDTO
         {
-
-            [Display(Name = "Rental_Id")]
-            public int? Rental_Id { get; set; }
-
-            [Display(Name = "Total_Amount")]
-            public decimal? Total_Amount { get; set; }
-
-            [Display(Name = "Pending_Amount")]
-            public decimal? Pending_Amount { get; set; }
-
-            [Display(Name = "Advance_Payment")]
-            public decimal? Advance_Payment { get; set; }
-
-            [Display(Name = "Payment_Status")]
+            public int Id { get; set; }
+            public int Rental_Id { get; set; }
+            public decimal Total_Amount { get; set; }
+            public decimal Pending_Amount { get; set; }
+            public decimal Advance_Payment { get; set; }
             public string Payment_Status { get; set; }
-
-            [Display(Name = "Due_Date")]
-            public DateTime? Due_Date { get; set; }
+            public DateTime Due_Date { get; set; }
+            public DateTime Created_At { get; set; }
+            public DateTime Update_At { get; set; }
+            public string Rental_Status { get; set; } // Estado del alquiler relacionado
         }
     }
 

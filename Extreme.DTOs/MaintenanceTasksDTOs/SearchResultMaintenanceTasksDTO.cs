@@ -15,14 +15,13 @@ namespace Extreme.DTOs.MaintenanceTasksDTOs
 
         public class MaintenanceTasksDTO
         {
-            [Display(Name = "Maintenance_Id ")]
-            public int? Maintenance_Id { get; set; }
-
-            [Display(Name = "Task_Name")]
+            public int Id { get; set; }
+            public int Maintenance_Id { get; set; }
             public string Task_Name { get; set; }
-
-            [Display(Name = "Status")]
+            public string Description { get; set; }
             public string Status { get; set; }
+            public DateTime Completed_At { get; set; }
+            public DateTime Created_At { get; set; }
 
         }
     }

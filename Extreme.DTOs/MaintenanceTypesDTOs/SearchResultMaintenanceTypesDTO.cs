@@ -15,11 +15,10 @@ namespace Extreme.DTOs.MaintenanceTypesDTOs
 
         public class MaintenanceTypesDTO
         {
-            [Display(Name = "Name")]
+            public int Id { get; set; }
             public string Name { get; set; }
-
-            [Display(Name = "Description")]
             public string Description { get; set; }
+            public DateTime Created_At { get; set; }
         }
     }
 
