@@ -32,8 +32,9 @@ namespace ConstructoraExtreme.Models.DAL
         public DbSet<MaintenanceTasks> MaintenanceTasks { get; set; }
         public DbSet<MaintenanceParts> MaintenanceParts { get; set; }
         public DbSet<Category> categories { get; set; }
+        public DbSet<Images> Images { get; set; }
 
-      
+
     }
 
 }

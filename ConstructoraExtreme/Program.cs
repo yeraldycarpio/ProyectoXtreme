@@ -4,11 +4,16 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+//Generador de departamentos
+using ConstructoraExtreme.DeparmentGenerator.GeneratorExtensions;
+//Generador de municipios
+using ConstructoraExtreme.MunicipalGenerator.MunicipalGeneratorExtencions;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
@@ -43,6 +48,9 @@ builder.Services.AddScoped<RoleDAL>();
 builder.Services.AddScoped<DepartmentsCatalogDAL>();
 builder.Services.AddScoped<StoreDAL>();
 builder.Services.AddScoped<ProductsDAL>();
+builder.Services.AddScoped<PersonsDAL>();
+builder.Services.AddScoped<PersonReferencesDAL>();
+builder.Services.AddScoped<CategoryDAL>();
 
 // Configuración Autenticación
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
@@ -80,6 +88,8 @@ builder.Services.AddAuthorization(options =>
 builder.Services.AddControllers();
 
 var app = builder.Build();
+app.UseDepartmentsGenerator(); // Esto ejecutará la inicialización de datos una sola vez al iniciar la aplicación
+app.UseMunicipalitiesGenerator();// Esto ejecutará la inicialización de datos una sola vez al iniciar la aplicación
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -97,6 +107,9 @@ app.MapDepartmentEndpoint();
 app.MapStoreEndpoints();
 app.MapProductEndpoints();
 app.MapControllers();
+app.MapPersonsEndpoint();
+app.MapPersonReferencesEndpoint();
+app.MapCategoryEndpoints();
 
 app.Run();
 

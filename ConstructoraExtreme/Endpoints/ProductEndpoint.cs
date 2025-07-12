@@ -24,7 +24,7 @@ namespace ConstructoraExtreme.Endpoints
                     Store_Id = product.Store_Id,
                     StoreName = product.Store?.Name,
                     Category_Id = product.Category_Id,
-                    CategoryName=product.Category.Nombre,
+                    CategoryName=product.Category.Name,
                 };
 
                 return Results.Ok(result);
@@ -112,7 +112,7 @@ namespace ConstructoraExtreme.Endpoints
                         Store_Id = p.Store_Id,
                         StoreName = p.Store?.Name,
                         Category_Id=p.Category_Id,
-                        CategoryName =p.Category?.Nombre,
+                        CategoryName =p.Category?.Name,
                     }).ToList();
 
                     return Results.Ok(searchResult);

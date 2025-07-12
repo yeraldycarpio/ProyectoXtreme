@@ -16,30 +16,46 @@ namespace ConstructoraExtreme.Models.DAL
         // Método para crear una nueva persona en la base de datos.
         public async Task<int> Create(Persons person)
         {
-            _context.Persons.Add(person);
-            return await _context.SaveChangesAsync();
+            try
+            {
+                _context.Persons.Add(person);
+                var result = await _context.SaveChangesAsync();
+                return result;
+            }
+            catch (DbUpdateException ex)
+            {
+                // Log the error here if you have logging configured
+                throw new Exception("Error al guardar la persona en la base de datos", ex);
+            }
         }
 
         // Método para obtener una persona por su ID.
-        public async Task<Persons> GetById(int id)
+        //public async Task<Persons> GetById(int id)
+        //{
+        //var person = await _context.Persons
+        //.Include(p => p.DocumentTypesCatalog)  // Incluir el tipo de documento relacionado
+        //.Include(p => p.EconomicActivitiesCatalog)  // Incluir la actividad económica relacionada
+        //.Include(p => p.DepartmentsCatalog)  // Incluir el departamento relacionado
+        //.Include(p => p.MunicipalitiesCatalog)  // Incluir el municipio relacionado
+        // .Include(p => p.Store)  // Incluir la tienda relacionada
+        //  .FirstOrDefaultAsync(p => p.Id == id);
+
+        //return person ?? new Persons();
+        //}
+        // Método para obtener una persona por ID
+        public async Task<Persons?> GetById(int id)
         {
-            var person = await _context.Persons
-                .Include(p => p.DocumentTypesCatalog)  // Incluir el tipo de documento relacionado
-                .Include(p => p.EconomicActivitiesCatalog)  // Incluir la actividad económica relacionada
-                .Include(p => p.DepartmentsCatalog)  // Incluir el departamento relacionado
-                .Include(p => p.MunicipalitiesCatalog)  // Incluir el municipio relacionado
-                .Include(p => p.Store)  // Incluir la tienda relacionada
-                .FirstOrDefaultAsync(p => p.Id == id);
-
-            return person ?? new Persons();
+            return await _context.Persons
+                .FirstOrDefaultAsync(p => p.Id == id && p.Active);
         }
-
         // Método para editar una persona existente en la base de datos.
         public async Task<int> Edit(Persons person)
         {
             int result = 0;
             var personUpdate = await GetById(person.Id);
-            if (personUpdate.Id != 0)
+
+            // Check if personUpdate is null before accessing its properties
+            if (personUpdate != null && personUpdate.Id != 0)
             {
                 // Actualiza los datos de la persona.
                 personUpdate.Document_Type_Id = person.Document_Type_Id;
@@ -65,6 +81,7 @@ namespace ConstructoraExtreme.Models.DAL
 
                 result = await _context.SaveChangesAsync();
             }
+
             return result;
         }
 

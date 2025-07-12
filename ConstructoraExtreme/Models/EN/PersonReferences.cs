@@ -2,6 +2,7 @@
 
 namespace ConstructoraExtreme.Models.EN
 {
+    [Table("person_references")]
     public class PersonReferences
     {
         public int Id { get; set; }

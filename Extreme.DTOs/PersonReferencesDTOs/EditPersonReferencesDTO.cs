@@ -12,11 +12,11 @@ namespace Extreme.DTOs.PersonReferencesDTOs
         [Required]
         public int Id { get; set; }
 
-        [Required]
-        public int Store_Id { get; set; }
+        //  [Required]
+        //public int Store_Id { get; set; }
 
-        [Required]
-        public int Person_Id { get; set; }
+        //        [Required]
+        //public int Person_Id { get; set; }
 
         [Required]
         [MaxLength(50)]

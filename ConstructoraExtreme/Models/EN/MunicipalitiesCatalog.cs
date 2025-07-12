@@ -2,6 +2,7 @@
 
 namespace ConstructoraExtreme.Models.EN
 {
+    [Table("municipalities_catalog")]
     public class MunicipalitiesCatalog
     {
         public int Id { get; set; }
